@@ -1,0 +1,19 @@
+{
+  "name": "ekit",
+  "version": "0.0.1",
+  "description": "简单的泛型工具库",
+  "main": "index.js",
+  "authors": {
+    "name": "大明",
+    "email": ""
+  },
+  "repository": "/ekit",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "Apache License",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

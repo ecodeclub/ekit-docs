@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+node_modules
+npm-debug.log
+coverage/
+run
+**/.DS_Store
+.basement
+config.local.js
+basement_dist
+
+.idea
