@@ -1,37 +1,37 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from 'vuepress'
+import { webpackBundler } from '@vuepress/bundler-webpack'
 import path from "path";
 
-module.exports = {
-    configureWebpack: () => {
-        const NODE_ENV = process.env.NODE_ENV
-        //判断是否是生产环境
-        if(NODE_ENV === 'production'){
-            return {
-                output: {
-                    publicPath: 'https://cdn.gocn.vip/ekit/'
-                },
-                resolve: {
-                    //配置路径别名
-                    alias: {
-                        'public': path.resolve(__dirname, './public')
-                    }
-                }
-            }
-        }else{
-            return {
-                resolve: {
-                    //配置路径别名
-                    alias: {
-                        'public': path.resolve(__dirname, './public')
-                    }
-                }
-            }
-        }
-    },
-}
-
 export default defineUserConfig({
+    bundler: webpackBundler({
+        configureWebpack: () => {
+            const NODE_ENV = process.env.NODE_ENV
+            //判断是否是生产环境
+            if(NODE_ENV === 'production'){
+                return {
+                    output: {
+                        publicPath: 'https://cdn.gocn.vip/ekit/'
+                    },
+                    resolve: {
+                        //配置路径别名
+                        alias: {
+                            'public': path.resolve(__dirname, './public')
+                        }
+                    }
+                }
+            }else{
+                return {
+                    resolve: {
+                        //配置路径别名
+                        alias: {
+                            'public': path.resolve(__dirname, './public')
+                        }
+                    }
+                }
+            }
+        },
+    }),
     lang: 'zh-CN',
     title: '小白社区',
     description: '新创建的社区',
