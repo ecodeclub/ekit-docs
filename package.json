@@ -1,7 +1,7 @@
 {
   "name": "ekit",
   "version": "0.0.1",
-  "description": "简单的泛型工具库",
+  "description": "小白社区，菜鸡聚集地",
   "main": "index.js",
   "authors": {
     "name": "大明",
@@ -24,5 +24,10 @@
     "@vuepress/plugin-pwa": "^1.2.0",
     "moment": "^2.24.0",
     "vuepress": "^1.9.7"
+  },
+  "devDependencies": {
+    "@vuepress/theme-default": "^1.9.7",
+    "lru-cache": "^7.14.0",
+    "markdown-it-emoji": "^2.0.2"
   }
 }
