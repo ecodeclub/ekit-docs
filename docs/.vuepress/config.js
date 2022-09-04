@@ -2,10 +2,7 @@ import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from 'vuepress'
 import path from "path";
 
-export default defineUserConfig({
-    lang: 'zh-CN',
-    title: '小白社区',
-    description: '新创建的社区',
+module.exports = {
     configureWebpack: () => {
         const NODE_ENV = process.env.NODE_ENV
         //判断是否是生产环境
@@ -32,6 +29,12 @@ export default defineUserConfig({
             }
         }
     },
+}
+
+export default defineUserConfig({
+    lang: 'zh-CN',
+    title: '小白社区',
+    description: '新创建的社区',
 
     // markdown 相关配置
     // markdown: {
