@@ -66,6 +66,7 @@ export default defineUserConfig({
                     children:[
                         '/ekit/develop/guide/README.md',
                         '/ekit/develop/guide/list.md',
+                        '/ekit/develop/guide/copier.md',
                     ]
                 },
 
