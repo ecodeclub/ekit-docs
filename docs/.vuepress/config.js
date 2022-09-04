@@ -1,4 +1,5 @@
 const { description } = require('../../package.json')
+const path = require('path')
 
 module.exports = {
   /**
@@ -20,6 +21,36 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
+
+    configureWebpack: () => {
+        const NODE_ENV = process.env.NODE_ENV
+        //判断是否是生产环境
+        if(NODE_ENV === 'production'){
+            return {
+                output: {
+                    publicPath: 'https://cdn.gocn.vip/ekit/'
+                },
+                resolve: {
+                    //配置路径别名
+                    alias: {
+                        'public': path.resolve(__dirname, './public')
+                    }
+                }
+            }
+        }else{
+            return {
+                resolve: {
+                    //配置路径别名
+                    alias: {
+                        'public': path.resolve(__dirname, './public')
+                    }
+                }
+            }
+        }
+    },
+    markdown: {
+        lineNumbers: true, // 代码块显示行号
+    },
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
@@ -52,35 +83,6 @@ module.exports = {
         link: 'https://v1.vuepress.vuejs.org'
       }
     ],
-  configureWebpack: () => {
-      const NODE_ENV = process.env.NODE_ENV
-      //判断是否是生产环境
-      if(NODE_ENV === 'production'){
-          return {
-              output: {
-                  publicPath: 'https://cdn.gocn.vip/ekit/'
-              },
-              resolve: {
-                  //配置路径别名
-                  alias: {
-                      'public': path.resolve(__dirname, './public')
-                  }
-              }
-          }
-      }else{
-          return {
-              resolve: {
-                  //配置路径别名
-                  alias: {
-                      'public': path.resolve(__dirname, './public')
-                  }
-              }
-          }
-      }
-  },
-  markdown: {
-      lineNumbers: true, // 代码块显示行号
-  },
     sidebar: {
       'ekit/develop/guide/': [
         {
