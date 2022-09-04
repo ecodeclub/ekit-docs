@@ -1,27 +1,11 @@
-const { description } = require('../../package.json')
-const path = require('path')
+import { defineUserConfig } from 'vuepress'
+import { defaultTheme } from 'vuepress'
+import path from "path";
 
-module.exports = {
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
-  title: 'ekit',
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
-  description: description,
-
-  /**
-   * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
-   */
-  head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
-  ],
-
+export default defineUserConfig({
+    lang: 'zh-CN',
+    title: '小白社区',
+    description: '新创建的社区',
     configureWebpack: () => {
         const NODE_ENV = process.env.NODE_ENV
         //判断是否是生产环境
@@ -48,65 +32,67 @@ module.exports = {
             }
         }
     },
-    markdown: {
-        lineNumbers: true, // 代码块显示行号
-    },
 
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
-  themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
-    nav: [
-      // {
-      //   text: 'ekit',
-      //   link: '/ekit/develop/guide/',
-      // },
-      {
-        text: 'ekit',
-        items: [
-          { text: "develop", link: "/ekit/develop/guide/" },
+    // markdown 相关配置
+    // markdown: {
+    //     lineNumbers: true, // 代码块显示行号
+    // },
+    theme: defaultTheme({
+        // default theme config
+        navbar: [
+            {
+                text: 'Home',
+                link: '/',
+            },
+            {
+                text: 'ekit',
+                children: [
+                    { text: "develop", link: "/ekit/develop/guide/" },
+                ],
+            },
+            {
+                text: 'egen',
+                children: [
+                    { text: "develop", link: "/egen/develop/guide/" },
+                ],
+            },
         ],
-      },
-      // {
-      //   text: 'Config',
-      //   link: '/config/'
-      // },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
-    ],
-    sidebar: {
-      'ekit/develop/guide/': [
-        {
-          title: '快速开始',
-          collapsable: false,
-          children: [
-              '',
-              'list'
-          ]
-        },
-        // {
-        //   title: 'List',
-        //   collapsable: false,
-        //   link: 'list/'
-        // }
-      ],
-    }
-  },
 
-  /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-   */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
-}
+        sidebar: {
+            '/ekit/develop/guide/': [
+                {
+                    title: '快速开始',
+                    collapsable: true,
+                    children:[
+                        '/ekit/develop/guide/README.md',
+                        '/ekit/develop/guide/list.md',
+                    ]
+                },
+
+            ],
+        }
+    }),
+    // theme: {
+    //     repo: '',
+    //     editLinks: false,
+    //     docsDir: '',
+    //     editLinkText: '',
+    //     lastUpdated: false,
+    //     nav: [
+    //         // {
+    //         //   text: 'ekit',
+    //         //   link: '/ekit/develop/guide/',
+    //         // },
+
+    //         // {
+    //         //   text: 'Config',
+    //         //   link: '/config/'
+    //         // },
+    //         {
+    //             text: 'VuePress',
+    //             link: 'https://v1.vuepress.vuejs.org'
+    //         }
+    //     ],
+
+    // },
+})

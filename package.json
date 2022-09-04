@@ -1,28 +1,16 @@
 {
   "name": "ekit",
   "version": "0.0.1",
-  "description": "简单的泛型工具库",
+  "description": "简单的工具库",
   "main": "index.js",
-  "authors": {
-    "name": "大明",
-    "email": ""
+  "repository": "git@github.com:gotomicro/ekit-docs.git",
+  "author": "Deng Ming <mingflycash@gmail.com>",
+  "license": "Apache",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.51"
   },
-  "repository": "/ekit",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
-  },
-  "license": "Apache License",
-  "dependencies": {
-    "@vssue/api-github-v3": "^1.4.4",
-    "@vssue/vuepress-plugin-vssue": "^1.4.6",
-    "@vuepress/plugin-active-header-links": "^1.2.0",
-    "@vuepress/plugin-back-to-top": "^1.2.0",
-    "@vuepress/plugin-medium-zoom": "^1.2.0",
-    "@vuepress/plugin-nprogress": "^1.2.0",
-    "@vuepress/plugin-pwa": "^1.2.0",
-    "moment": "^2.24.0",
-    "vuepress": "^1.9.7"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   }
 }
