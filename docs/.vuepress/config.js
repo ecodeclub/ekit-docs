@@ -33,14 +33,14 @@ module.exports = {
     editLinkText: '',
     lastUpdated: false,
     nav: [
+      // {
+      //   text: 'ekit',
+      //   link: '/ekit/develop/guide/',
+      // },
       {
-        text: '快速开始',
-        link: '/develop/guide/',
-      },
-      {
-        text: '版本',
+        text: 'ekit',
         items: [
-          { text: "develop", link: "/develop/guide/" },
+          { text: "develop", link: "/ekit/develop/guide/" },
         ],
       },
       // {
@@ -82,7 +82,7 @@ module.exports = {
       lineNumbers: true, // 代码块显示行号
   },
     sidebar: {
-      '/develop/guide/': [
+      'ekit/develop/guide/': [
         {
           title: '快速开始',
           collapsable: false,
