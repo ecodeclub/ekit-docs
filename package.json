@@ -27,5 +27,5 @@
     "@vuepress/theme-default": "^1.9.7",
     "lru-cache": "^7.14.0",
     "markdown-it-emoji": "^2.0.2"
-  },
+  }
 }
