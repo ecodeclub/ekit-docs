@@ -91,7 +91,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
-                        'list'
+                        'list',
+                        'bean_option'
                     ]
                 },
             ],
