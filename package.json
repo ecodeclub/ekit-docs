@@ -13,7 +13,7 @@
     "dev": "vuepress dev src",
     "build": "vuepress build src"
   },
-  "license": "Apache License",
+  "license": "NO LICENSE",
   "dependencies": {
     "@vssue/api-github-v3": "^1.4.4",
     "@vssue/vuepress-plugin-vssue": "^1.4.6",
