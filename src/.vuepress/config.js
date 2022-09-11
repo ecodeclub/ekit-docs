@@ -80,10 +80,6 @@ module.exports = {
             {
                 text: '贡献者指南',
                 link: "/contribution/",
-            },
-            {
-                text: 'VuePress',
-                link: 'https://v1.vuepress.vuejs.org'
             }
         ],
         sidebar: {
