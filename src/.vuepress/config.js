@@ -68,6 +68,7 @@ module.exports = {
                 text: 'ekit',
                 items: [
                     {text: "develop", link: "/ekit/develop/guide/"},
+                    {text: "v0.0.3", link: "/ekit/v0.0.3/guide/"},
                 ],
             },
             {
@@ -91,8 +92,22 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
+                        'slice',
+                        'syncx',
+                        'bean_option',
                         'list',
-                        'bean_option'
+                    ]
+                },
+            ],
+            '/ekit/v0.0.3/guide/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'slice',
+                        'bean_option',
+                        'syncx',
+                        'list',
                     ]
                 },
             ],
