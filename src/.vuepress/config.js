@@ -105,8 +105,8 @@ module.exports = {
                     children: [
                         '',
                         'slice',
-                        'bean_option',
                         'syncx',
+                        'bean_option',
                         'list',
                     ]
                 },
