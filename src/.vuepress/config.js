@@ -78,14 +78,14 @@ module.exports = {
                 ],
             },
             {
+                text: '贡献者指南',
+                link: "/contribution/",
+            },
+            {
                 text: 'VuePress',
                 link: 'https://v1.vuepress.vuejs.org'
             }
         ],
-        // sidebar: [
-        //     '/ekit/develop/guide/',
-        //     '/egen/develop/guide/'
-        // ]
         sidebar: {
             '/ekit/develop/guide/': [
                 {
@@ -111,7 +111,18 @@ module.exports = {
                     ]
                 },
             ],
+            // ----------------- //
             '/egen/develop/guide/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                    ]
+                },
+            ],
+
+            // ----------------- //
+            '/contribution/': [
                 {
                     collapsable: false,
                     children: [
