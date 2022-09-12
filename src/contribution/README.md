@@ -64,14 +64,13 @@
 
 你可以通过点击对应的 action 后面的 Details 来查看失败的具体原因，并且进行修复。
 
-![Action 失败原因](./img/action_details.png)
 
 在创建了合并请求之后并不意味着你就高枕无忧，实际上你需要对这个合并请求保持关注。我们会持续 review 你的代码，并且给出修改建议。
 
 你可以隔一段时间就打开来看一下，确认我们是否留了新的 review 意见。
 
 如果你已经解决了我们的 review 意见，那么可以点击一下 Resolve conversation 按钮。
-![img.png](./img/resolve_conversation.png)
+
 
 等我们 review 完毕，并且你已经修改完所有的 review 意见，以及 github action 都已经通过了，我们就会将你的合并请求合并进去主仓库里面。
 
