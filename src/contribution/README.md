@@ -71,7 +71,6 @@
 
 如果你已经解决了我们的 review 意见，那么可以点击一下 Resolve conversation 按钮。
 
-
 等我们 review 完毕，并且你已经修改完所有的 review 意见，以及 github action 都已经通过了，我们就会将你的合并请求合并进去主仓库里面。
 
 ## 其它
