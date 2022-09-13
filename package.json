@@ -1,7 +1,7 @@
 {
   "name": "ekit",
   "version": "0.0.1",
-  "description": "小白社区，菜鸡聚集地",
+  "description": "小白社区，小白聚集地",
   "main": "index.js",
   "authors": {
     "name": "大明",
@@ -22,10 +22,13 @@
     "@vuepress/plugin-medium-zoom": "^1.2.0",
     "@vuepress/plugin-nprogress": "^1.2.0",
     "@vuepress/plugin-pwa": "^1.2.0",
-    "moment": "^2.24.0",
-    "vuepress": "^1.9.7",
     "@vuepress/theme-default": "^1.9.7",
     "lru-cache": "^7.14.0",
-    "markdown-it-emoji": "^2.0.2"
+    "markdown-it-emoji": "^2.0.2",
+    "moment": "^2.24.0",
+    "vuepress": "^1.9.7"
+  },
+  "devDependencies": {
+    "webpack": "^4.46.0"
   }
 }
