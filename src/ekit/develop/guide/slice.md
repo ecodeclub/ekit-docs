@@ -364,8 +364,35 @@ func ExampleMap() {
 }
 ```
 
+类似地，还有一个 FilterMap 方法，与 Map 方法比起来，调用者可以决定是否忽略某些元素：
+```go
+
+func ExampleFilterMap() {
+	src := []int{1, -2, 3}
+	dst := slice.FilterMap[int, string](src, func(idx int, src int) (string, bool) {
+		return strconv.Itoa(src), src >= 0
+	})
+	fmt.Println(dst)
+	// Output: [1 3]
+}
+```
+FilterMap 的传入的方法的第二个返回值是 false，那么意味着对应的返回值会被忽略掉。因此可以注意到在例子里面我们输出的是 "[1 3]"，也就是 -2 已经被我们忽略了。
 
 
+## 删除
+切片的删除还是稍微有点棘手的，所以我们封装了一下对切片的删除操作，提供了一个 Delete 方法：
+```go
+func ExampleDelete() {
+	res, _ := slice.Delete[int]([]int{1, 2, 3, 4}, 2)
+	fmt.Println(res)
+	_, err := slice.Delete[int]([]int{1, 2, 3, 4}, -1)
+	fmt.Println(err)
+	// Output:
+	// [1 2 4]
+	// ekit: 下标超出范围，长度 4, 下标 -1
+}
+```
+需要注意的是，你一定要重新处理 Delete 的返回值。如果你肯定你的下标不会出现问题，那么可以忽略第二个返回值。
 
 
 
