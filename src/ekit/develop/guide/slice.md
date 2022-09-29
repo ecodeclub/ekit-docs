@@ -394,5 +394,37 @@ func ExampleDelete() {
 ```
 需要注意的是，你一定要重新处理 Delete 的返回值。如果你肯定你的下标不会出现问题，那么可以忽略第二个返回值。
 
+## 翻转
+
+我们提供了两个方法用于将一个切片翻转：
+- Reverse：**会创建一个新的切片**，新切片的元素顺序和原本的元素顺序是相反的
+- ReverseSelf：会直接调整原本切片中元素的位置
+
+使用例子：
+```go
+func ExampleReverse() {
+    res := slice.Reverse[int]([]int{1, 3, 2, 2, 4})
+    fmt.Println(res)
+    res2 := slice.Reverse[string]([]string{"a", "b", "c", "d", "e"})
+    fmt.Println(res2)
+    // Output:
+    // [4 2 2 3 1]
+    // [e d c b a]
+}
+
+
+func ExampleReverseSelf() {
+	src := []int{1, 3, 2, 2, 4}
+	slice.ReverseSelf[int](src)
+	fmt.Println(src)
+	src2 := []string{"a", "b", "c", "d", "e"}
+	slice.ReverseSelf[string](src2)
+	fmt.Println(src2)
+	// Output:
+	// [4 2 2 3 1]
+	// [e d c b a]
+}
+```
+
 
 
