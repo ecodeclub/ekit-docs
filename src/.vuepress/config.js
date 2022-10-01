@@ -92,6 +92,7 @@ module.exports = {
                         'slice',
                         'sqlx',
                         'syncx',
+                        'atomicx',
                         'bean_option',
                         'list',
                         'task_pool',
