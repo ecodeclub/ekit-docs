@@ -95,6 +95,7 @@ module.exports = {
                         'atomicx',
                         'bean_option',
                         'list',
+                        'queue',
                         'task_pool',
                     ]
                 },
