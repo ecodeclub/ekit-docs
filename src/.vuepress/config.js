@@ -74,6 +74,12 @@ module.exports = {
                 ],
             },
             {
+                text: 'ecron',
+                items: [
+                    {text: "develop", link: "/ecron/develop/guide/"},
+                ],
+            },
+            {
                 text: 'egen',
                 items: [
                     {text: "develop", link: "/egen/develop/guide/"},
@@ -149,6 +155,16 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
+                    ]
+                },
+            ],
+
+            '/ecron/develop/guide/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'architecture',
                     ]
                 },
             ],
