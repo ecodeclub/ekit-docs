@@ -165,6 +165,7 @@ module.exports = {
                     children: [
                         '',
                         'architecture',
+                        'solutions',
                     ]
                 },
             ],
