@@ -86,6 +86,19 @@ module.exports = {
                 ],
             },
             {
+                text: '面试八股文',
+                items: [
+                    {text: "缓存", link: "/interview-baguwen/cache/"},
+                    {text: "数据库", link: "/interview-baguwen/database/"},
+                    {text: "微服务", link: "/interview-baguwen/microservice/"},
+                    {text: "消息队列", link: "/interview-baguwen/mq/"},
+                    {text: "Redis", link: "/interview-baguwen/redis/"},
+                    {text: "垃圾回收", link: "/interview-baguwen/gc/"},
+                    {text: "Go 语言", link: "/interview-baguwen/golang/"},
+                    {text: "套路", link: "/interview-baguwen/pattern/"},
+                ],
+            },
+            {
                 text: '贡献者指南',
                 link: "/contribution/",
             }
@@ -168,6 +181,72 @@ module.exports = {
                         'solutions',
                     ]
                 },
+            ],
+            '/interview-baguwen/cache/': [
+                {
+                    collapsable: false,
+                    children: [
+                        ''
+                    ],
+                }
+            ],
+            '/interview-baguwen/database/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'indexes',
+                        'transaction',
+                    ],
+                }
+            ],
+            '/interview-baguwen/microservice/': [
+                {
+                    collapsable: false,
+                    children: [
+                        ''
+                    ],
+                }
+            ],
+            '/interview-baguwen/mq/': [
+                {
+                    collapsable: false,
+                    children: [
+                        ''
+                    ],
+                }
+            ],
+            '/interview-baguwen/redis/': [
+                {
+                    collapsable: false,
+                    children: [
+                        ''
+                    ],
+                }
+            ],
+            '/interview-baguwen/gc/': [
+                {
+                    collapsable: false,
+                    children: [
+                        ''
+                    ],
+                }
+            ],
+            '/interview-baguwen/golang/': [
+                {
+                    collapsable: false,
+                    children: [
+                        ''
+                    ],
+                }
+            ],
+            '/interview-baguwen/pattern/': [
+                {
+                    collapsable: false,
+                    children: [
+                        ''
+                    ],
+                }
             ],
 
             // ----------------- //
