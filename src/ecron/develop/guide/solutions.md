@@ -3,6 +3,38 @@
 如果你对我们是从什么方面调研的，可以参考这个：
 - [2022.12.15 会议纪要](https://github.com/gotomicro/ecron/discussions/1)
 
+## ElasticJob 
+
+ElasticJob 调研由[@yzicheng](https://github.com/yzicheng)完成，[原文](https://gitee.com/yzcgitte/elasticjob/blob/master/ElasticJob.md)
+
+### ElasticJob-Lite
+
+Elastic-Job-Lite 是去中心化的，以 Jar 包提供的轻量级分布式任务协调服务。这种形态有很多好处：
+- 用户不需要额外部署服务器，对于中小企业，或者小规模应用来说，是一个极大的成本优势
+- 应用本身就可以作为任务调度、任务执行的实例，也是节省成本
+- 从开发的角度来说，用户注册一个任务，就和写一个普通的接口差不多
+
+我们可以考虑借鉴这一种思路。也就是说整个任务调度集群，就是应用集群，不再需要额外的集群。又或者说，用户可以自己选择是否采用独立的 ecron 集群，也可以混用。所谓混用就是一些实例就是只部署了 ecron，而另外一些实例就是任务本身和 ecron 的代理部署在一起。
+
+进一步说，这种形态可以衍生为，在用户的应用实例里面部署一个 sidecar，或者将任务调度本身嵌进去一个已有的 sidecar 里面。
+
+![ecron 去中心化思路](img/ecron_no_center.png)
+
+如图所示，其中 ecron 节点，混合节点和混合-sidecar 节点将会参与任务调度，或者主从选举和任务分片之类的事情。
+
+但是任务执行，或者任务本身，ecron 节点就不能参与了，因为它是纯粹的 ecron 节点，上面没有任何的任务逻辑。
+
+更加巧妙地是，我们可以通过加入一个中心节点，比如说 etcd 之类的，来转化成主从结构。那么主节点就只负责分片，从节点负责调度。这种形态就接近 ElasticJob 本身的形态了。可以考虑给予不同的权重来控制调度的负载。例如说对于纯粹的 ecron 节点，权重很高，混合节点权重比较低——应用越是复杂的，权重越低。
+
+### Zookeeper
+目前来说，ElasticJob 非常依赖于 Zookeeper。
+
+### 需要确定的点
+- Elastic-Job-Lite 是怎么选举的，以及 Elastic-Job-Lite 是怎么发现节点的，用户要配置好，还是通过广播来查找？
+- Mesos - Framework 的主要功能、架构设计和核心接口设计
+- ElasticJob 和 zookeeper 打交道，是直接操作 zookeeper 还是说抽象出来了一层接口。例如说，如果抽取出来了接口，那么我能不能提供其它实现，比如说基于 etcd 的实现？
+
+
 ## Kubernetes
 
 k8s 的调研部分由 @henrysworld 完成。
