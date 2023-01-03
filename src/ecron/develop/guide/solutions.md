@@ -165,7 +165,7 @@ ElasticJob 的主从模式有一个特征，即主节点只负责分片之类的
 
 ## Kubernetes
 
-k8s 的调研部分由 @henrysworld 完成。
+k8s 的调研部分由 [@henrysworld](https://github.com/henrysworld) 完成，[原文](https://henrysworld.github.io/2022/12/26/kubernetes-scheduler%20/)
 
 ### 分析
 
@@ -209,7 +209,7 @@ k8s 整体设计自然是十分优秀的，其中值得我们重点关注和学�
 
 
 ## Airflow
-Airflow 调研由 @YogiLiu 完成。
+Airflow 调研由 [@YogiLiu](https://github.com/YogiLiu) 完成，[原文](https://gist.github.com/YogiLiu/0183138a1eb68d7a61245382cbda2414)
 
 ### 分析
 
