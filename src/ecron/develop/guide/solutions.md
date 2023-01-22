@@ -126,7 +126,7 @@ Elastic-Job-Lite 是去中心化的，以 Jar 包提供的轻量级分布式任�
 
 进一步说，这种形态可以衍生为，在用户的应用实例里面部署一个 sidecar，或者将任务调度本身嵌进去一个已有的 sidecar 里面。
 
-![ecron 去中心化思路](img/ecron_no_center.png)
+![ecron 去中心化思路](./img/ecron_no_center.png)
 
 如图所示，其中 ecron 节点，混合节点和混合-sidecar 节点将会参与任务调度，或者主从选举和任务分片之类的事情。
 
@@ -216,7 +216,7 @@ Airflow 调研由 [@YogiLiu](https://github.com/YogiLiu) 完成，[原文](https
 #### DAG
 Airflow 也是使用 DAG（有向无环图）来描述任务之间的依赖。例如：
 
-![Airflow 任务依赖](img/airflow_dag.png)
+![Airflow 任务依赖](./img/airflow_dag.png)
 
 
 #### Scheduler 和 Executor
