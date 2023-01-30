@@ -68,6 +68,7 @@ module.exports = {
                 text: 'ekit',
                 items: [
                     {text: "develop", link: "/ekit/develop/guide/"},
+                    {text: "v0.0.6", link: "/ekit/v0.0.6/guide/"},
                     {text: "v0.0.5", link: "/ekit/v0.0.5/guide/"},
                     {text: "v0.0.4", link: "/ekit/v0.0.4/guide/"},
                     {text: "v0.0.3", link: "/ekit/v0.0.3/guide/"},
@@ -116,6 +117,24 @@ module.exports = {
                         'bean_option',
                         'list',
                         'queue',
+                        'mapx',
+                        'task_pool',
+                    ]
+                },
+            ],
+            '/ekit/v0.0.6/guide/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'slice',
+                        'sqlx',
+                        'syncx',
+                        'atomicx',
+                        'bean_option',
+                        'list',
+                        'queue',
+                        'mapx',
                         'task_pool',
                     ]
                 },
