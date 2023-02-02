@@ -75,6 +75,12 @@ module.exports = {
                 ],
             },
             {
+                text: 'eorm',
+                items: [
+                    {text: "develop", link: "/eorm/develop/"},
+                ],
+            },
+            {
                 text: 'ecron',
                 items: [
                     {text: "develop", link: "/ecron/develop/guide/"},
@@ -182,6 +188,16 @@ module.exports = {
                 },
             ],
             // ----------------- //
+            '/eorm/develop/': [
+                {
+                    collapsable: false,
+                    sidebarDepth: 2,
+                    children: [
+                        '',
+                    ]
+                },
+            ],
+
             '/egen/develop/guide/': [
                 {
                     collapsable: false,
