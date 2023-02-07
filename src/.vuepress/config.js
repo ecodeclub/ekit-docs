@@ -249,7 +249,10 @@ module.exports = {
                 {
                     collapsable: false,
                     children: [
-                        ''
+                        '',
+                        'availability',
+                        'timeout',
+                        'general'
                     ],
                 }
             ],
@@ -257,7 +260,8 @@ module.exports = {
                 {
                     collapsable: false,
                     children: [
-                        ''
+                        '',
+                        'Kafka'
                     ],
                 }
             ],
@@ -265,7 +269,12 @@ module.exports = {
                 {
                     collapsable: false,
                     children: [
-                        ''
+                        'data_structure',
+                        'availability',
+                        'expired',
+                        'io_model',
+                        'persistent',
+                        'pipeline'
                     ],
                 }
             ],
@@ -273,7 +282,10 @@ module.exports = {
                 {
                     collapsable: false,
                     children: [
-                        ''
+                        '',
+                        'algorithm',
+                        'g1',
+                        'java_cms',
                     ],
                 }
             ],
@@ -281,7 +293,9 @@ module.exports = {
                 {
                     collapsable: false,
                     children: [
-                        ''
+                        '',
+                        'mutex',
+                        'goroutine'
                     ],
                 }
             ],
