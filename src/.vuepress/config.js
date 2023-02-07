@@ -97,6 +97,7 @@ module.exports = {
                 items: [
                     {text: "缓存", link: "/interview-baguwen/cache/"},
                     {text: "数据库", link: "/interview-baguwen/database/"},
+                    {text: "分库分表", link: "/interview-baguwen/sharding/"},
                     {text: "微服务", link: "/interview-baguwen/microservice/"},
                     {text: "消息队列", link: "/interview-baguwen/mq/"},
                     {text: "Redis", link: "/interview-baguwen/redis/"},
@@ -232,6 +233,15 @@ module.exports = {
                         '',
                         'indexes',
                         'transaction',
+                    ],
+                }
+            ],
+            '/interview-baguwen/sharding/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'rewrite_sql',
                     ],
                 }
             ],
