@@ -130,23 +130,6 @@ module.exports = {
                     ]
                 },
             ],
-            '/ekit/v0.0.6/guide/': [
-                {
-                    collapsable: false,
-                    children: [
-                        '',
-                        'slice',
-                        'sqlx',
-                        'syncx',
-                        'atomicx',
-                        'bean_option',
-                        'list',
-                        'queue',
-                        'mapx',
-                        'task_pool',
-                    ]
-                },
-            ],
             '/ekit/v0.0.7/guide/': [
                 {
                     collapsable: false,
@@ -161,6 +144,23 @@ module.exports = {
                         'queue',
                         'task_pool',
                         'retry',
+                    ]
+                },
+            ],
+            '/ekit/v0.0.6/guide/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'slice',
+                        'sqlx',
+                        'syncx',
+                        'atomicx',
+                        'bean_option',
+                        'list',
+                        'queue',
+                        'mapx',
+                        'task_pool',
                     ]
                 },
             ],
