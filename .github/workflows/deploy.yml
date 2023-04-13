@@ -12,6 +12,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup node
         uses: actions/setup-node@v2
+      - name: Pull Submodules
+        run: git submodule update --init --recursive
       - name: Build docs
         run: npm install && npm run build
       - name: Install ossutil

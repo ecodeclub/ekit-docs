@@ -69,9 +69,16 @@ module.exports = {
                 items: [
                     {text: "develop", link: "/ekit/develop/guide/"},
                     {text: "v0.0.7", link: "/ekit/v0.0.7/guide/"},
+                    {text: "v0.0.6", link: "/ekit/v0.0.6/guide/"},
                     {text: "v0.0.5", link: "/ekit/v0.0.5/guide/"},
                     {text: "v0.0.4", link: "/ekit/v0.0.4/guide/"},
                     {text: "v0.0.3", link: "/ekit/v0.0.3/guide/"},
+                ],
+            },
+            {
+                text: 'eorm',
+                items: [
+                    {text: "develop", link: "/eorm/develop/"},
                 ],
             },
             {
@@ -84,6 +91,20 @@ module.exports = {
                 text: 'egen',
                 items: [
                     {text: "develop", link: "/egen/develop/guide/"},
+                ],
+            },
+            {
+                text: '面试八股文',
+                items: [
+                    {text: "缓存", link: "/interview-baguwen/cache/"},
+                    {text: "数据库", link: "/interview-baguwen/database/"},
+                    {text: "分库分表", link: "/interview-baguwen/sharding/"},
+                    {text: "微服务", link: "/interview-baguwen/microservice/"},
+                    {text: "消息队列", link: "/interview-baguwen/mq/"},
+                    {text: "Redis", link: "/interview-baguwen/redis/"},
+                    {text: "垃圾回收", link: "/interview-baguwen/gc/"},
+                    {text: "Go 语言", link: "/interview-baguwen/golang/"},
+                    {text: "套路", link: "/interview-baguwen/pattern/"},
                 ],
             },
             {
@@ -104,6 +125,24 @@ module.exports = {
                         'bean_option',
                         'list',
                         'queue',
+                        'mapx',
+                        'task_pool',
+                    ]
+                },
+            ],
+            '/ekit/v0.0.6/guide/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'slice',
+                        'sqlx',
+                        'syncx',
+                        'atomicx',
+                        'bean_option',
+                        'list',
+                        'queue',
+                        'mapx',
                         'task_pool',
                     ]
                 },
@@ -168,6 +207,16 @@ module.exports = {
                 },
             ],
             // ----------------- //
+            '/eorm/develop/': [
+                {
+                    collapsable: false,
+                    sidebarDepth: 2,
+                    children: [
+                        '',
+                    ]
+                },
+            ],
+
             '/egen/develop/guide/': [
                 {
                     collapsable: false,
@@ -183,8 +232,98 @@ module.exports = {
                     children: [
                         '',
                         'architecture',
+                        'solutions',
                     ]
                 },
+            ],
+            '/interview-baguwen/cache/': [
+                {
+                    collapsable: false,
+                    children: [
+                        ''
+                    ],
+                }
+            ],
+            '/interview-baguwen/database/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'indexes',
+                        'transaction',
+                    ],
+                }
+            ],
+            '/interview-baguwen/sharding/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'rewrite_sql',
+                    ],
+                }
+            ],
+            '/interview-baguwen/microservice/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'availability',
+                        'timeout',
+                        'general'
+                    ],
+                }
+            ],
+            '/interview-baguwen/mq/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'Kafka'
+                    ],
+                }
+            ],
+            '/interview-baguwen/redis/': [
+                {
+                    collapsable: false,
+                    children: [
+                        'data_structure',
+                        'availability',
+                        'expired',
+                        'io_model',
+                        'persistent',
+                        'pipeline'
+                    ],
+                }
+            ],
+            '/interview-baguwen/gc/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'algorithm',
+                        'g1',
+                        'java_cms',
+                    ],
+                }
+            ],
+            '/interview-baguwen/golang/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '',
+                        'mutex',
+                        'goroutine'
+                    ],
+                }
+            ],
+            '/interview-baguwen/pattern/': [
+                {
+                    collapsable: false,
+                    children: [
+                        ''
+                    ],
+                }
             ],
 
             // ----------------- //

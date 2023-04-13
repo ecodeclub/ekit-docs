@@ -26,7 +26,8 @@
     "lru-cache": "^7.14.0",
     "markdown-it-emoji": "^2.0.2",
     "moment": "^2.24.0",
-    "vuepress": "^1.9.7"
+    "vuepress": "^1.9.7",
+    "vuepress-auto-sidebar": "^1.1.1"
   },
   "devDependencies": {
     "webpack": "^4.46.0"
