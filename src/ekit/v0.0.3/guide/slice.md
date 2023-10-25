@@ -14,7 +14,7 @@ Sum 使用例子：
 func ExampleSum() {
     res := slice.Sum[int]([]int{1, 2, 3})
     fmt.Println(res)
-    res = Sum[int](nil)
+    res = slice.Sum[int](nil)
     fmt.Println(res)
     // Output:
     // 6
