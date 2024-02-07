@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
-	"github.com/gotomicro/eorm"
+	"github.com/ecodeclub/eorm"
 	// 不要忘了匿名引入驱动
 	_ "github.com/mattn/go-sqlite3"
 	"time"

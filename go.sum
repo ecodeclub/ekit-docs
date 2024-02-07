@@ -1,5 +1,7 @@
 github.com/DATA-DOG/go-sqlmock v1.5.0 h1:Shsta01QNfFxHCfpW6YH2STWB0MudeXXEWMr20OEh60=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
+github.com/ecodeclub/ekit v0.0.8 h1:861Aot0GvD5ueREEYDVYc1oIhDuFyg6MTxIyiOa4Pvw=
+github.com/ecodeclub/ekit v0.0.8/go.mod h1:OqTojKeKFTxeeAAUwNIPKu339SRkX6KAuoK/8A5BCEs=
 github.com/gotomicro/ekit v0.0.0-20220612043755-81d8a8fb714a h1:Zpr8+lnnuUu3VpLZzde0ScX0FJlCZRBQhuVUhMIyh70=
 github.com/gotomicro/eorm v0.0.2-0.20221213164427-140b746f606e h1:uTFEURWR9sCMYzWy6qVboFL0Vkt/Rk+ajh40JZ5lrDk=
 github.com/gotomicro/eorm v0.0.2-0.20221213164427-140b746f606e/go.mod h1:X0If4uhOQpZbF1NRTcp9QwgQixHSsQBPXLriWF2QZ54=
@@ -7,6 +9,7 @@ github.com/gotomicro/eorm v0.0.2-0.20230118073303-fd75c16e6906 h1:mAjIMGHdZm7aJm
 github.com/gotomicro/eorm v0.0.2-0.20230118073303-fd75c16e6906/go.mod h1:X0If4uhOQpZbF1NRTcp9QwgQixHSsQBPXLriWF2QZ54=
 github.com/mattn/go-sqlite3 v1.14.13 h1:1tj15ngiFfcZzii7yd82foL+ks+ouQcj8j/TPq3fk1I=
 github.com/mattn/go-sqlite3 v1.14.13/go.mod h1:NyWgC/yNuGj7Q9rpYnZvas74GogHl5/Z4A/KQRfk6bU=
+github.com/mattn/go-sqlite3 v1.14.15/go.mod h1:2eHXhiwb8IkHr+BDWZGa96P6+rkvnG63S2DGjv9HUNg=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/stretchr/testify v1.7.1 h1:5TQK59W5E3v0r2duFAb7P95B6hEeOyEnHRa8MjYSMTY=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
