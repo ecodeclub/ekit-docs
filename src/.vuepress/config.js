@@ -23,30 +23,38 @@ module.exports = {
     ],
 
     configureWebpack: () => {
-        const NODE_ENV = process.env.NODE_ENV
+        // const NODE_ENV = process.env.NODE_ENV
         //判断是否是生产环境
-        if (NODE_ENV === 'production') {
-            return {
-                output: {
-                    publicPath: 'https://cdn.gocn.vip/ekit/'
-                },
-                resolve: {
-                    //配置路径别名
-                    alias: {
-                        'public': path.resolve(__dirname, './public')
-                    }
-                }
-            }
-        } else {
-            return {
-                resolve: {
-                    //配置路径别名
-                    alias: {
-                        'public': path.resolve(__dirname, './public')
-                    }
+        return {
+            resolve: {
+                //配置路径别名
+                alias: {
+                    'public': path.resolve(__dirname, './public')
                 }
             }
         }
+        // if (NODE_ENV === 'production') {
+        //     return {
+        //         output: {
+        //             publicPath: 'https://cdn.gocn.vip/ekit/'
+        //         },
+        //         resolve: {
+        //             //配置路径别名
+        //             alias: {
+        //                 'public': path.resolve(__dirname, './public')
+        //             }
+        //         }
+        //     }
+        // } else {
+        //     return {
+        //         resolve: {
+        //             //配置路径别名
+        //             alias: {
+        //                 'public': path.resolve(__dirname, './public')
+        //             }
+        //         }
+        //     }
+        // }
     },
     markdown: {
         lineNumbers: true, // 代码块显示行号
@@ -64,6 +72,15 @@ module.exports = {
         editLinkText: '',
         lastUpdated: false,
         nav: [
+            {
+                text: 'beego',
+                items: [
+                    {text: "develop", link: "/beego/docs/en-US/developing/"},
+                    {text: "v2.2.x", link: "/beego/docs/en-US/v2.2.x/"},
+                    {text: "v2.1.x", link: "/beego/docs/en-US/v2.1.x/"},
+                    {text: "v2.0.x", link: "/beego/docs/en-US/v2.0.x/"},
+                ],
+            },
             {
                 text: 'ekit',
                 items: [
@@ -83,33 +100,7 @@ module.exports = {
                 ],
             },
             {
-                text: 'ecron',
-                items: [
-                    {text: "develop", link: "/ecron/develop/guide/"},
-                ],
-            },
-            {
-                text: 'egen',
-                items: [
-                    {text: "develop", link: "/egen/develop/guide/"},
-                ],
-            },
-            {
-                text: '面试八股文',
-                items: [
-                    {text: "缓存", link: "/interview-baguwen/cache/"},
-                    {text: "数据库", link: "/interview-baguwen/database/"},
-                    {text: "分库分表", link: "/interview-baguwen/sharding/"},
-                    {text: "微服务", link: "/interview-baguwen/microservice/"},
-                    {text: "消息队列", link: "/interview-baguwen/mq/"},
-                    {text: "Redis", link: "/interview-baguwen/redis/"},
-                    {text: "垃圾回收", link: "/interview-baguwen/gc/"},
-                    {text: "Go 语言", link: "/interview-baguwen/golang/"},
-                    {text: "套路", link: "/interview-baguwen/pattern/"},
-                ],
-            },
-            {
-                text: '贡献者指南',
+                text: 'contribution',
                 link: "/contribution/",
             }
         ],
@@ -254,96 +245,6 @@ module.exports = {
                     ]
                 },
             ],
-            '/interview-baguwen/cache/': [
-                {
-                    collapsable: false,
-                    children: [
-                        ''
-                    ],
-                }
-            ],
-            '/interview-baguwen/database/': [
-                {
-                    collapsable: false,
-                    children: [
-                        '',
-                        'indexes',
-                        'transaction',
-                    ],
-                }
-            ],
-            '/interview-baguwen/sharding/': [
-                {
-                    collapsable: false,
-                    children: [
-                        '',
-                        'rewrite_sql',
-                    ],
-                }
-            ],
-            '/interview-baguwen/microservice/': [
-                {
-                    collapsable: false,
-                    children: [
-                        '',
-                        'availability',
-                        'timeout',
-                        'general'
-                    ],
-                }
-            ],
-            '/interview-baguwen/mq/': [
-                {
-                    collapsable: false,
-                    children: [
-                        '',
-                        'Kafka'
-                    ],
-                }
-            ],
-            '/interview-baguwen/redis/': [
-                {
-                    collapsable: false,
-                    children: [
-                        'data_structure',
-                        'availability',
-                        'expired',
-                        'io_model',
-                        'persistent',
-                        'pipeline'
-                    ],
-                }
-            ],
-            '/interview-baguwen/gc/': [
-                {
-                    collapsable: false,
-                    children: [
-                        '',
-                        'algorithm',
-                        'g1',
-                        'java_cms',
-                    ],
-                }
-            ],
-            '/interview-baguwen/golang/': [
-                {
-                    collapsable: false,
-                    children: [
-                        '',
-                        'mutex',
-                        'goroutine'
-                    ],
-                }
-            ],
-            '/interview-baguwen/pattern/': [
-                {
-                    collapsable: false,
-                    children: [
-                        ''
-                    ],
-                }
-            ],
-
             // ----------------- //
             '/contribution/': [
                 {
