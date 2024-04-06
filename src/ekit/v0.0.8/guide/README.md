@@ -10,6 +10,6 @@ ekit 目前要求 Go >= 1.18。
 
 使用 go get 命令安装：
 ```shell
-go get github.com/gotomicro/ekit@latest
+go get github.com/ecodeclub/ekit@latest
 ```
 如果你在国内，可能会因为墙的问题而拉不下来依赖，可以考虑多试几次。如果有机会，可以尝试科学上网。

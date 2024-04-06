@@ -1,8 +1,8 @@
 # 切片
-切片作为最常用的数据结构，我们为它提供了非常多的辅助方法。以下所有的方法都定义在 "github.com/gotomicro/ekit/slice" 下，使用前你需要引入：
+切片作为最常用的数据结构，我们为它提供了非常多的辅助方法。以下所有的方法都定义在 "github.com/ecodeclub/ekit/slice" 下，使用前你需要引入：
 ```
 import (
-    "github.com/gotomicro/ekit/slice"
+    "github.com/ecodeclub/ekit/slice"
 )
 ```
 

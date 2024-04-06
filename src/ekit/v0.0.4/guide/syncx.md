@@ -5,7 +5,7 @@
 你需要引入包来使用这些封装后的结构体：
 ```go
 import (
-    "github.com/gotomicro/ekit/syncx"
+    "github.com/ecodeclub/ekit/syncx"
 )
 ```
 

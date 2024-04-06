@@ -5,7 +5,7 @@
 为了使用 List，你需要引入包：
 ```go
 import (
-    "github.com/gotomicro/ekit/list"
+    "github.com/ecodeclub/ekit/list"
 )
 ```
 

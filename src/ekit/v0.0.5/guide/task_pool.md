@@ -4,7 +4,7 @@
 在使用之前你需要引入：
 ```go
 import (
-    "github.com/gotomicro/ekit/pool"
+    "github.com/ecodeclub/ekit/pool"
 )
 ```
 

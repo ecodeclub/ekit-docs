@@ -12,7 +12,7 @@
 所有的这些队列都在包：
 ```go
 import (
-    "github.com/gotomicro/ekit/queue"
+    "github.com/ecodeclub/ekit/queue"
 )
 
 ```
