@@ -4,7 +4,7 @@
 - 为 Go 的内置结构体 map 提供了一些辅助方法
 - 新加了哈希 map 和基于树形结构的 map 实现
 
-所有的这些方法和结构体都位于 `github.com/gotomicro/ekit/mapx` 这个包里面。
+所有的这些方法和结构体都位于 `github.com/ecodeclub/ekit/mapx` 这个包里面。
 
 ## map 辅助方法
 
@@ -102,8 +102,8 @@ TreeMap 的使用依旧很简单：
 ```go
 import (
 	"fmt"
-	"github.com/gotomicro/ekit"
-	"github.com/gotomicro/ekit/mapx"
+	"github.com/ecodeclub/ekit"
+	"github.com/ecodeclub/ekit/mapx"
 )
 
 func ExampleNewTreeMap() {

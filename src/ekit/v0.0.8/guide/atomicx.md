@@ -5,7 +5,7 @@
 使用这些类型和方法之前，你需要引入依赖：
 ```go
 import (
-    "github.com/gotomicro/ekit/syncx/atomicx"
+    "github.com/ecodeclub/ekit/syncx/atomicx"
 )
 ```
 

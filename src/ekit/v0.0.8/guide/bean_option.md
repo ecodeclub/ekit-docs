@@ -2,7 +2,7 @@
 
 因为 Go 本身没有提供构造器，也不支持重载，所以大多数时候我们都会使用 Option 模式来构造复杂对象。
 
-在 `github.com/gotomicro/ekit/bean/option` 包里面，我们提供了快速使用 Option 模式的辅助类和辅助方法：
+在 `github.com/ecodeclub/ekit/bean/option` 包里面，我们提供了快速使用 Option 模式的辅助类和辅助方法：
 
 ```go
 package option
@@ -19,7 +19,7 @@ func Apply[T any](t *T, opts ...Option[T]) {
 
 ```go
 
-// 别忘了引入 "github.com/gotomicro/ekit/bean/option"
+// 别忘了引入 "github.com/ecodeclub/ekit/bean/option"
 
 func WithName(name string) option.Option[User] {
 	return func (u *User) {
@@ -62,7 +62,7 @@ func ApplyErr[T any](t *T, opts ...OptionErr[T]) error {
 ```
 使用例子：
 ```go
-// 别忘了引入 "github.com/gotomicro/ekit/bean/option"
+// 别忘了引入 "github.com/ecodeclub/ekit/bean/option"
 
 func WithAgeErr(age int) OptionErr[User] {
     return func(u *User) error {

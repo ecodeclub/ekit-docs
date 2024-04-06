@@ -5,7 +5,7 @@
 为了使用这些类和方法，你需要引入：
 ```go
 import (
-    "github.com/gotomicro/ekit/sqlx"
+    "github.com/ecodeclub/ekit/sqlx"
 )
 ```
 ## 加密列支持
