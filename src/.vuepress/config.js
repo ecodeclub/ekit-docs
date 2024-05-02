@@ -110,12 +110,10 @@ module.exports = {
                         text: 'ekit',
                         items: [
                             {text: "develop", link: "/ekit/develop/guide/"},
+                            {text: "v0.0.9", link: "/ekit/v0.0.9/guide/"},
                             {text: "v0.0.8", link: "/ekit/v0.0.8/guide/"},
                             {text: "v0.0.7", link: "/ekit/v0.0.7/guide/"},
                             {text: "v0.0.6", link: "/ekit/v0.0.6/guide/"},
-                            {text: "v0.0.5", link: "/ekit/v0.0.5/guide/"},
-                            {text: "v0.0.4", link: "/ekit/v0.0.4/guide/"},
-                            {text: "v0.0.3", link: "/ekit/v0.0.3/guide/"},
                         ],
                     },
                     {
@@ -131,9 +129,10 @@ module.exports = {
                 ],
                 sidebar: {
                     // 目前中英文没区别
-                    "/zh/developing/": buildBeegoVersionSideBarEn("developing"),
-                    "/zh/v2.0.x/": buildBeegoVersionSideBarEn("v2.0.x"),
-                    "/zh/v2.1.0/": buildBeegoVersionSideBarEn("v2.1.0"),
+                    "/beego/developing/": buildBeegoVersionSideBarEn("developing"),
+                    "/beego/v2.0.x/": buildBeegoVersionSideBarEn("v2.0.x"),
+                    "/beego/v2.1.x/": buildBeegoVersionSideBarEn("v2.1.0"),
+                    "/beego/v2.2.x/": buildBeegoVersionSideBarEn("v2.1.0"),
                     '/ekit/develop/guide/': [
                         {
                             collapsable: false,
@@ -148,6 +147,24 @@ module.exports = {
                                 'queue',
                                 'mapx',
                                 'task_pool',
+                            ]
+                        },
+                    ],
+                    '/ekit/v0.0.9/guide/': [
+                        {
+                            collapsable: false,
+                            children: [
+                                '',
+                                'slice',
+                                'sqlx',
+                                'syncx',
+                                'atomicx',
+                                'bean_option',
+                                'list',
+                                'queue',
+                                'task_pool',
+                                'retry',
+                                'iox',
                             ]
                         },
                     ],
@@ -199,48 +216,6 @@ module.exports = {
                                 'queue',
                                 'mapx',
                                 'task_pool',
-                            ]
-                        },
-                    ],
-                    '/ekit/v0.0.5/guide/': [
-                        {
-                            collapsable: false,
-                            children: [
-                                '',
-                                'slice',
-                                'sqlx',
-                                'syncx',
-                                'atomicx',
-                                'bean_option',
-                                'list',
-                                'queue',
-                                'task_pool',
-                            ]
-                        },
-                    ],
-                    '/ekit/v0.0.4/guide/': [
-                        {
-                            collapsable: false,
-                            children: [
-                                '',
-                                'slice',
-                                'sqlx',
-                                'syncx',
-                                'bean_option',
-                                'list',
-                                'task_pool',
-                            ]
-                        },
-                    ],
-                    '/ekit/v0.0.3/guide/': [
-                        {
-                            collapsable: false,
-                            children: [
-                                '',
-                                'slice',
-                                'syncx',
-                                'bean_option',
-                                'list',
                             ]
                         },
                     ],
